@@ -56,7 +56,6 @@ public class Main {
         topPanel.add(lettersPanel, BorderLayout.CENTER);
         topPanel.add(selectedTextField, BorderLayout.SOUTH);
 
-        // Words to find
         String[] words = {
             "JAVA", "CODE", "SWING", "PANEL", "BUTTON",
             "FRAME", "ARRAY", "LOOP", "STRING", "EVENT",
@@ -152,7 +151,7 @@ public class Main {
 
                         if (result == JOptionPane.YES_OPTION) {
                             frame.dispose();
-                            main(null); // Restart the game
+                            main(null);
                         } else {
                             frame.dispose();
                         }
@@ -201,7 +200,7 @@ public class Main {
         frame.setVisible(true);
 
         // ================= COUNTDOWN TIMER START =================
-        Timer countdownTimer = new Timer(1000, null); // fires every second
+        Timer countdownTimer = new Timer(1000, null);
         countdownTimer.addActionListener(e -> {
             timeInSeconds[0]--;
 
@@ -224,7 +223,7 @@ public class Main {
 
                 if (result == JOptionPane.YES_OPTION) {
                     frame.dispose();
-                    main(null); // Restart the game
+                    main(null);
                 } else {
                     frame.dispose();
                 }
